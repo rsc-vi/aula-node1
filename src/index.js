@@ -5,7 +5,8 @@ app.use(express.json());
 
 //arrow function(estudar)
 //get>>pegar
-app.get('/tuma', (req, res) => {
+
+app.patch('/tuma', (req, res) => {
   res.send('Hello jaciane!');
 });
 
