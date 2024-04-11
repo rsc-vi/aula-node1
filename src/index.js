@@ -2,19 +2,24 @@ const express = require('express');
 const app = express();
 const port = 3000;
 app.use(express.json());
+//app.use(express.urlencoded()); //via form
 
 //arrow function(estudar)
 //get>>pegar
-
-app.patch('/tuma', (req, res) => {
-  res.send('Hello jaciane!');
+app.get('/tuma', (req, res) => {
+  res.send('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
 });
 
-//post>>submeter
+//post>>submeter e enviar
 //com a mesma assinatura, metódos deferentes
 app.post('/', function (req, res) {
-  console.log(req.body?.nome)
-  res.send('Got a POST request');
+  let dados = req.body.dados;  
+  let dados1 = req.body.dados;
+  let dados2 = req.body.dados;
+  let dados3 = req.body.dados;
+
+  res.send(`Meus dados: ${dados1.nome}; ${dados2.email}; ${dados3.telefone}`);
+  console.log(dados)
 });
 
 app.listen(port, () => {
