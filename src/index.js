@@ -6,22 +6,27 @@ app.use(express.json());
 
 //arrow function(estudar)
 //get>>pegar
-app.get('/tuma', (req, res) => {
-  res.send('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
+app.get('/abagaras', (req, res) => {
+  res.send('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA');
 });
 
 //post>>submeter e enviar
 //com a mesma assinatura, metódos deferentes
 app.post('/', function (req, res) {
   let dados = req.body.dados;  
-  let dados1 = req.body.dados;
-  let dados2 = req.body.dados;
-  let dados3 = req.body.dados;
+ 
 
-  res.send(`Meus dados: ${dados1.nome}; ${dados2.email}; ${dados3.telefone}`);
+
+  res.send(`Meus dados: ${dados.nome}; ${dados.email};${dados.telefone};${dados.endereco}`);
   console.log(dados)
 });
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+//c0isas para amanha
+// no forme usar o >>>metodo='pst' action=http..."
+//<input id='nome' nome="nome">
+//form
+//vc consegue!!!
